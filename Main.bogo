@@ -1,0 +1,46 @@
+BOGOSCRIPT(
+
+
+
+Fun myPrint IsNative End
+Fun prompt Does
+	Rem "$0: Nachricht" End
+	Rem "$1: Zahl?" End
+	Call myPrint With Call + With $0, "\n" End End
+	Call print With ">  " End
+	If $1 Do
+		Return Call readNum End End
+	Else Do
+		Return Call readStr End End
+	End
+End
+Forever Do
+	Forever Do
+		Let rechenart Be Call prompt With "Rechenart auswaehlen [+, -]", False End End
+		If Call || With Call = With Get rechenart End, "+" End, Call = With Get rechenart End, "-" End End Do
+			Break
+		End
+	End
+	Forever Do
+		Let 1 Be Call prompt With "Zahl 1", True End End
+		If Call != With Get 1 End, Nothing End Do
+			Break
+		End
+	End
+	Forever Do
+		Let 2 Be Call prompt With "Zahl 2", True End End
+		If Call != With Get 2 End, Nothing End Do
+			Break
+		End
+	End
+	If Call = With Get rechenart End, "+" End Do
+		Let ergebnis Be Call + With Get 1 End, Get 2 End End End
+	Else Do
+		Let ergebnis Be Call - With Get 1 End, Get 2 End End End
+	End
+	Call println With Call + With "Ergebnis: ", Get ergebnis End End End
+End
+
+
+
+)

@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Quelldateien">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Headerdateien">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Ressourcendateien">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Headerdateien\Types">
+      <UniqueIdentifier>{936cc746-e70a-4724-81ff-36ea8676e9bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\Standard">
+      <UniqueIdentifier>{a799a27b-1bed-479d-bdee-d0c2171f4b6b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="StandardNativeFunctions.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="TypeValueCompound.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="String.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Streams.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bogoscript.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="TypeValueCompound.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Args.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Functions.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Variables.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Scope.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Comparison.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLanguage.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Type.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Value.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Literal.hpp">
+      <Filter>Headerdateien\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="StandardLibrary.hpp">
+      <Filter>Headerdateien\Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="StandardNativeFunctions.hpp">
+      <Filter>Headerdateien\Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="ErrorValue.hpp">
+      <Filter>Headerdateien\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="NullValue.hpp">
+      <Filter>Headerdateien\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="String.hpp">
+      <Filter>Headerdateien\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Boolean.hpp">
+      <Filter>Headerdateien\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Integer.hpp">
+      <Filter>Headerdateien\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Streams.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Main.bogo">
+      <Filter>Quelldateien</Filter>
+    </None>
+  </ItemGroup>
+</Project>
