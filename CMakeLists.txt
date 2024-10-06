@@ -13,3 +13,5 @@ project ("BogoScript")
 
 # Schließen Sie Unterprojekte ein.
 add_subdirectory ("BogoScript")
+
+set_property(TARGET "BogoScript" PROPERTY CXX_STANDARD 20)
