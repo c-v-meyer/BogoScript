@@ -1,10 +1,14 @@
-// runtime_manager.h: Defines the class runtime_manager.
+/*!
+ * \file runtime_manager.h
+ * \brief Defines the class \ref bogoscript::core::runtime_manager.
+ */
 
 #pragma once
 
 namespace bogoscript::core
 {
-	class runtime_manager final {
+	class runtime_manager final
+	{
 	public:
 		static auto& get_instance() noexcept(noexcept(runtime_manager()))
 		{
@@ -12,9 +16,9 @@ namespace bogoscript::core
 			return instance;
 		}
 
-		runtime_manager(runtime_manager const&) = delete;
+		runtime_manager(const runtime_manager&) = delete;
 		runtime_manager(runtime_manager&&) noexcept = delete;
-		void operator=(runtime_manager const&) = delete;
+		void operator=(const runtime_manager&) = delete;
 		void operator=(runtime_manager&&) noexcept = delete;
 
 	private:

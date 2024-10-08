@@ -3,7 +3,7 @@
 #
 
 # Fügen Sie der ausführbaren Datei dieses Projekts eine Quelle hinzu.
-add_executable (BogoScript "example_main.cpp" "include/bogoscript.h" "include/core/runtime_manager.h" "source/core/runtime_manager.cpp")
+add_executable (BogoScript "source/example_main.cpp" "include/bogoscript.h" "include/core/runtime_manager.h" "source/core/runtime_manager.cpp" "include/typing/literal.h" "include/typing/primitive.h" "include/typing/integer.h" "source/typing/integer.cpp" "include/typing/type_flag.h" "include/core/type_value_compound.h" "include/core/value.h")
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET BogoScript PROPERTY CXX_STANDARD 20)
