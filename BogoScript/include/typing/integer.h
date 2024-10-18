@@ -30,12 +30,12 @@ namespace bogoscript::typing
 		using possible_literal_type1 = std::int8_t;
 
 		/*!
-		 * \brief Another accepted underlying type that shall be cast to \ref base_type upon construction.
+		 * \copydoc possible_literal_type1
 		 */
 		using possible_literal_type2 = std::int16_t;
 
 		/*!
-		 * \brief Another accepted underlying type that shall be cast to \ref base_type upon construction.
+		 * \copydoc possible_literal_type1
 		 */
 		using possible_literal_type3 = std::int32_t;
 #pragma endregion
